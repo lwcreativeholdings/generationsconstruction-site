@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generations Construction | Home repair nonprofit serving Northern Colorado</title>
+<meta name="description" content="Generations Construction is a 501(c)(3) nonprofit that repairs homes for under-resourced families across Northern Colorado and funds the work by reclaiming and reselling construction materials.">
+<link rel="canonical" href="https://generationsconstruction.org/">
+<meta name="theme-color" content="#1F2D3A">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Generations Construction">
+<meta property="og:title" content="Generations Construction | Home repair for Northern Colorado">
+<meta property="og:description" content="A nonprofit that repairs homes for under-resourced families across Northern Colorado, funded by reclaiming and reselling construction materials.">
+<meta property="og:url" content="https://generationsconstruction.org/">
+<meta property="og:image" content="https://generationsconstruction.org/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Generations Construction: we fix homes for neighbors who need a hand">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/archivo-wdth.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Generations Construction Corp",
+  "alternateName": "Generations Construction",
+  "url": "https://generationsconstruction.org/",
+  "logo": "https://generationsconstruction.org/apple-touch-icon.png",
+  "description": "A 501(c)(3) nonprofit that provides charitable construction and home repair services for under-resourced individuals and families across Northern Colorado, funded by a material reclamation program.",
+  "nonprofitStatus": "Nonprofit501c3",
+  "taxID": "43-2536814",
+  "email": "info@generationsconstruction.org",
+  "address": {"@type": "PostalAddress", "addressLocality": "Loveland", "addressRegion": "CO", "addressCountry": "US"},
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Northern Colorado"},
+    {"@type": "City", "name": "Fort Collins"},
+    {"@type": "City", "name": "Loveland"},
+    {"@type": "City", "name": "Greeley"},
+    {"@type": "City", "name": "Longmont"},
+    {"@type": "City", "name": "Windsor"}
+  ]
+}
+</script>
+<style>
+:root{
+  --drywall:#EEF0EC;
+  --paper:#F8F9F6;
+  --slate:#1F2D3A;
+  --slate-2:#3A4A58;
+  --pine:#D9A441;
+  --pine-deep:#9A6A1E;
+  --sage:#506B4E;
+  --sage-light:#DDE6D9;
+  --chalk:#4A86C5;
+  --measure:72ch;
+}
+@font-face{
+  font-family:"Archivo";font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;
+  src:url("fonts/archivo-wdth.woff2") format("woff2-variations"),url("fonts/archivo-wdth.woff2") format("woff2");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--drywall);color:var(--slate);
+  font-family:"Archivo",system-ui,sans-serif;font-variation-settings:"wdth" 100;
+  font-size:1.125rem;line-height:1.6;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--chalk);outline-offset:3px;border-radius:2px}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--slate);color:#fff;padding:.6rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+
+/* type */
+h1,h2,h3{font-variation-settings:"wdth" 125;font-weight:800;line-height:1.05;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(2.3rem,4.8vw,3.9rem)}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem)}
+h3{font-size:1.3rem;line-height:1.2}
+p{margin:0 0 1rem;max-width:var(--measure)}
+.lede{font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.55;color:var(--slate-2)}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font:inherit;font-weight:700;font-size:1.05rem;text-decoration:none;cursor:pointer;
+  padding:.85rem 1.4rem;border-radius:4px;border:2px solid var(--slate);
+  background:var(--slate);color:var(--paper);
+}
+.btn:hover{background:var(--slate-2);border-color:var(--slate-2)}
+.btn-pine{background:var(--pine);border-color:var(--pine);color:var(--slate)}
+.btn-pine:hover{background:#E6B65A;border-color:#E6B65A}
+.btn-ghost{background:transparent;color:var(--slate)}
+.btn-ghost:hover{background:var(--slate);color:var(--paper)}
+
+/* header */
+.site-head{background:var(--drywall);border-bottom:2px solid var(--slate)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand-mark{display:grid;gap:3px;width:34px}
+.brand-mark span{height:7px;border-radius:1px}
+.brand-mark span:nth-child(1){background:#C98F3A;width:70%;margin-inline:auto}
+.brand-mark span:nth-child(2){background:#6E8796}
+.brand-mark span:nth-child(3){background:var(--pine)}
+.brand-name{font-variation-settings:"wdth" 125;font-weight:800;font-size:1.15rem;line-height:1}
+.brand-name small{display:block;font-variation-settings:"wdth" 100;font-weight:500;font-size:.78rem;color:var(--slate-2);margin-top:.2rem}
+.nav{display:flex;align-items:center;gap:1.4rem}
+.nav a{text-decoration:none;font-weight:600;font-size:1rem}
+.nav a:not(.btn):hover{text-decoration:underline;text-decoration-color:var(--pine);text-decoration-thickness:3px;text-underline-offset:6px}
+.nav .btn{padding:.6rem 1rem;font-size:.98rem}
+.menu-toggle{display:none}
+
+/* hero */
+.hero{padding-block:clamp(3rem,7vw,6rem) clamp(2.5rem,5vw,4rem)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero h1{margin-bottom:1.4rem}
+.hero .lede{margin-bottom:2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.8rem}
+.house .nail{fill:rgba(31,45,58,.55)}
+.house .grain{stroke:rgba(31,45,58,.18);stroke-width:1.4;stroke-linecap:round}
+.house .chalk{stroke:var(--chalk);stroke-width:3;stroke-linecap:round;stroke-dasharray:2 7;opacity:.8}
+@media (prefers-reduced-motion:no-preference){
+  .house .board,.house .fixture{animation:stack .5s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 70ms)}
+  @keyframes stack{from{opacity:0;transform:translateY(-26px)}to{opacity:1;transform:none}}
+}
+
+/* chalk line divider */
+.chalkline{height:0;border:0;border-top:3px dotted var(--chalk);opacity:.7;margin:0}
+
+/* sections */
+section{padding-block:clamp(3.5rem,7vw,6rem)}
+.section-head{max-width:46rem;margin-bottom:2.5rem}
+.section-head h2{margin-bottom:1rem}
+
+/* cycle */
+.cycle{background:var(--slate);color:var(--paper)}
+.cycle .lede{color:#C9D2DA}
+.cycle-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:step;position:relative}
+.cycle-steps li{counter-increment:step;padding:1.6rem 1.6rem 1.6rem 0;border-top:6px solid var(--pine);position:relative}
+.cycle-steps li + li{padding-left:1.6rem;border-left:1px solid rgba(255,255,255,.14)}
+.cycle-steps li::before{content:counter(step);display:block;font-variation-settings:"wdth" 125;font-weight:800;font-size:2.6rem;line-height:1;color:var(--pine);margin-bottom:.8rem}
+.cycle-steps h3{margin-bottom:.6rem;color:var(--paper)}
+.cycle-steps p{color:#C9D2DA;margin:0}
+.cycle-note{margin-top:2rem;color:#C9D2DA;font-style:italic}
+
+/* repair */
+.repair .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.fix-list{list-style:none;padding:0;margin:1.2rem 0 2rem;display:grid;grid-template-columns:1fr 1fr;gap:.2rem 1.5rem}
+.fix-list li{padding:.55rem 0 .55rem 1.6rem;position:relative;border-bottom:1px solid rgba(31,45,58,.15)}
+.fix-list li::before{content:"";position:absolute;left:0;top:1.05rem;width:.85rem;height:.4rem;background:var(--pine);border-radius:1px}
+.who{background:var(--paper);border-left:6px solid var(--sage);padding:1.2rem 1.4rem;margin-top:1.5rem}
+.who h3{margin-bottom:.5rem}
+.who p{margin:0}
+
+/* form */
+.form-panel{background:var(--paper);border:2px solid var(--slate);border-radius:6px;padding:clamp(1.4rem,3vw,2.2rem)}
+.form-panel h3{font-size:1.6rem;margin-bottom:.4rem}
+.form-panel > p{color:var(--slate-2);font-size:1rem}
+.field{display:grid;gap:.35rem;margin-bottom:1rem}
+.field label,.field legend{font-weight:700;font-size:.98rem}
+.field .hint{font-weight:400;color:var(--slate-2);font-size:.9rem}
+input,textarea,select{
+  font:inherit;font-size:1rem;color:var(--slate);background:#fff;
+  border:2px solid #7D8A80;border-radius:4px;padding:.7rem .8rem;width:100%;
+}
+input:focus,textarea:focus,select:focus{border-color:var(--chalk);outline:none;box-shadow:0 0 0 3px rgba(74,134,197,.25)}
+textarea{min-height:7rem;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+fieldset{border:0;padding:0;margin:0 0 1rem}
+.radios{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:.3rem}
+.radios label{display:flex;align-items:center;gap:.45rem;font-weight:500}
+.radios input{width:auto;accent-color:var(--slate)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+button[disabled]{opacity:.7;cursor:progress}
+.form-status{display:none;margin-top:1rem;padding:1rem 1.1rem;background:var(--sage-light);border-left:5px solid var(--sage);font-size:1rem}
+.form-status.show{display:block}
+.form-status p{margin:0 0 .4rem}
+
+/* materials */
+.materials{background:var(--sage);color:#fff}
+.materials .lede{color:#E6EEE3}
+.materials-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.5rem,4vw,3rem)}
+.yard{background:#fff;color:var(--slate);border-radius:6px;padding:clamp(1.4rem,3vw,2.2rem);display:flex;flex-direction:column;align-items:flex-start}
+.yard .btn{margin-top:auto}
+.yard .tags:last-of-type{margin-bottom:1.6rem}
+.yard h3{font-size:1.5rem;margin-bottom:.8rem}
+.yard p{font-size:1rem}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;list-style:none;padding:0;margin:0 0 1.2rem}
+.tags li{background:var(--drywall);border:1px solid #C9D0CA;border-radius:3px;padding:.3rem .65rem;font-size:.95rem}
+.tags.no li{background:#fff;text-decoration:line-through;text-decoration-color:rgba(31,45,58,.45);color:var(--slate-2)}
+.yard .label{font-weight:700;font-size:.98rem;margin:0 0 .5rem}
+
+/* volunteer + give */
+.split{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.ways{list-style:none;padding:0;margin:1.5rem 0 2rem}
+.ways li{padding:1rem 0;border-top:1px solid rgba(31,45,58,.18)}
+.ways li:last-child{border-bottom:1px solid rgba(31,45,58,.18)}
+.ways strong{display:block;font-size:1.1rem}
+.give{background:var(--pine);border-radius:6px;padding:clamp(1.4rem,3vw,2.2rem)}
+.give h3{font-size:1.6rem;margin-bottom:.8rem}
+.give p{font-size:1rem}
+.give .small{font-size:.9rem;margin:0}
+
+/* contact */
+.contact{background:var(--paper);border-top:2px solid var(--slate)}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.contact-grid h3{font-size:1.05rem;margin-bottom:.4rem}
+.contact-grid p{margin:0;font-size:1.05rem}
+
+/* footer */
+.site-foot{background:var(--slate);color:#C9D2DA;font-size:.95rem;padding-block:2.5rem}
+.site-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}
+.site-foot p{margin:0 0 .35rem}
+.site-foot strong{color:var(--paper)}
+
+/* photos */
+.photo{margin:0;border-radius:6px;overflow:hidden;background:#d5d9d3}
+.photo picture{display:contents}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-repair{aspect-ratio:3/2;margin:1.6rem 0 .4rem}
+.cycle-head{display:grid;grid-template-columns:1fr minmax(0,22rem);gap:clamp(2rem,5vw,4rem);align-items:end;margin-bottom:2.5rem}
+.cycle-head .section-head{margin-bottom:0}
+.photo-plans{aspect-ratio:4/3;border-radius:6px}
+.photo-lumber{aspect-ratio:21/8;margin-bottom:clamp(1.5rem,4vw,3rem)}
+.yard .photo-saw{aspect-ratio:16/9;margin:calc(-1 * clamp(1.4rem,3vw,2.2rem)) calc(-1 * clamp(1.4rem,3vw,2.2rem)) 1.4rem;border-radius:6px 6px 0 0;align-self:stretch}
+.side{display:grid;gap:1.5rem}
+.photo-volunteers{aspect-ratio:4/5}
+.photo-volunteers img{object-position:50% 30%}
+
+/* responsive */
+@media (max-width:900px){
+  .hero .wrap,.repair .wrap,.materials-grid,.split,.cycle-head{grid-template-columns:1fr}
+  .photo-volunteers{aspect-ratio:4/3}
+  .photo-lumber{aspect-ratio:16/9}
+  .house{max-width:440px;margin-inline:auto}
+  .cycle-steps{grid-template-columns:1fr}
+  .cycle-steps li + li{padding-left:0;border-left:0}
+  .cycle-steps li{padding-right:0}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .menu-toggle{display:inline-flex;font:inherit;font-weight:700;background:none;border:2px solid var(--slate);border-radius:4px;padding:.45rem .8rem;color:var(--slate);cursor:pointer}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--drywall);border-bottom:2px solid var(--slate);flex-direction:column;align-items:stretch;padding:1rem 1.25rem 1.4rem;gap:.9rem;z-index:5}
+  .nav.open{display:flex}
+  .site-head{position:relative}
+  .fix-list,.row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">Generations Construction<small>Nonprofit home repair for Northern Colorado</small></span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#materials">Materials</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#request">Request a repair</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title">We fix homes for neighbors who need a hand.</h1>
+        <p class="lede">Generations Construction is a nonprofit that repairs homes for under-resourced families across Northern Colorado. We pay for that work by giving leftover building materials a second life.</p>
+        <div class="actions">
+          <a class="btn" href="#request">Request a repair</a>
+          <a class="btn btn-ghost" href="#materials">Donate materials</a>
+        </div>
+      </div>
+      <svg class="house" viewBox="0 0 480 430" role="img" aria-label="A house built from mismatched reclaimed boards"><g class="board" style="--i:15"><rect x="318" y="82" width="24" height="70" rx="2" fill="#8E6B4B"/></g><g class="board" style="--i:0"><rect x="99.2" y="388" width="287.2" height="22" rx="2" fill="#6E8796"/><line x1="113.2" y1="395" x2="209.0" y2="395" class="grain"/><circle cx="106.2" cy="399.0" r="1.6" class="nail"/><circle cx="379.3" cy="399.0" r="1.6" class="nail"/></g><g class="board" style="--i:1"><rect x="85.5" y="362" width="303.8" height="22" rx="2" fill="#E0C9A0"/><line x1="99.5" y1="377" x2="221.2" y2="377" class="grain"/><circle cx="92.5" cy="373.0" r="1.6" class="nail"/><circle cx="382.3" cy="373.0" r="1.6" class="nail"/></g><g class="board" style="--i:2"><rect x="90.9" y="336" width="290.2" height="22" rx="2" fill="#D9A441"/><line x1="104.9" y1="343" x2="264.5" y2="343" class="grain"/><circle cx="97.9" cy="347.0" r="1.6" class="nail"/><circle cx="374.1" cy="347.0" r="1.6" class="nail"/></g><g class="board" style="--i:3"><rect x="97.2" y="310" width="284.8" height="22" rx="2" fill="#C98F3A"/><line x1="111.2" y1="317" x2="277.7" y2="317" class="grain"/><circle cx="104.2" cy="321.0" r="1.6" class="nail"/><circle cx="375.0" cy="321.0" r="1.6" class="nail"/></g><g class="board" style="--i:4"><rect x="99.2" y="284" width="290.1" height="22" rx="2" fill="#E0C9A0"/><line x1="113.2" y1="295" x2="207.2" y2="295" class="grain"/><circle cx="106.2" cy="295.0" r="1.6" class="nail"/><circle cx="382.2" cy="295.0" r="1.6" class="nail"/></g><g class="board" style="--i:5"><rect x="84.7" y="258" width="309.0" height="22" rx="2" fill="#8E6B4B"/><line x1="98.7" y1="269" x2="251.2" y2="269" class="grain"/><circle cx="91.7" cy="269.0" r="1.6" class="nail"/><circle cx="386.7" cy="269.0" r="1.6" class="nail"/></g><g class="board" style="--i:6"><rect x="85.9" y="232" width="299.1" height="22" rx="2" fill="#6E8796"/><line x1="99.9" y1="247" x2="214.9" y2="247" class="grain"/><circle cx="92.9" cy="243.0" r="1.6" class="nail"/><circle cx="377.9" cy="243.0" r="1.6" class="nail"/></g><g class="board" style="--i:7"><rect x="48.5" y="206" width="380.0" height="22" rx="2" fill="#8E6B4B"/><line x1="62.5" y1="221" x2="303.2" y2="221" class="grain"/><circle cx="55.5" cy="217.0" r="1.6" class="nail"/><circle cx="421.5" cy="217.0" r="1.6" class="nail"/></g><g class="board" style="--i:8"><rect x="67.7" y="180" width="334.0" height="22" rx="2" fill="#E0C9A0"/><line x1="81.7" y1="187" x2="259.2" y2="187" class="grain"/><circle cx="74.7" cy="191.0" r="1.6" class="nail"/><circle cx="394.7" cy="191.0" r="1.6" class="nail"/></g><g class="board" style="--i:9"><rect x="95.1" y="154" width="288.0" height="22" rx="2" fill="#9DB096"/><line x1="109.1" y1="165" x2="256.3" y2="165" class="grain"/><circle cx="102.1" cy="165.0" r="1.6" class="nail"/><circle cx="376.1" cy="165.0" r="1.6" class="nail"/></g><g class="board" style="--i:10"><rect x="117.3" y="128" width="242.0" height="22" rx="2" fill="#6E8796"/><line x1="131.3" y1="135" x2="288.5" y2="135" class="grain"/><circle cx="124.3" cy="139.0" r="1.6" class="nail"/><circle cx="352.3" cy="139.0" r="1.6" class="nail"/></g><g class="board" style="--i:11"><rect x="137.0" y="102" width="196.0" height="22" rx="2" fill="#8E6B4B"/><line x1="151.0" y1="113" x2="251.9" y2="113" class="grain"/><circle cx="144.0" cy="113.0" r="1.6" class="nail"/><circle cx="326.0" cy="113.0" r="1.6" class="nail"/></g><g class="board" style="--i:12"><rect x="167.8" y="76" width="150.0" height="22" rx="2" fill="#D7C29A"/><line x1="181.8" y1="87" x2="261.4" y2="87" class="grain"/><circle cx="174.8" cy="87.0" r="1.6" class="nail"/><circle cx="310.8" cy="87.0" r="1.6" class="nail"/></g><g class="board" style="--i:13"><rect x="183.4" y="50" width="104.0" height="22" rx="2" fill="#D9A441"/><line x1="197.4" y1="61" x2="227.5" y2="61" class="grain"/><circle cx="190.4" cy="61.0" r="1.6" class="nail"/><circle cx="280.4" cy="61.0" r="1.6" class="nail"/></g><g class="board" style="--i:14"><rect x="206.8" y="24" width="58.0" height="22" rx="2" fill="#D7C29A"/><line x1="220.8" y1="35" x2="238.1" y2="35" class="grain"/><circle cx="213.8" cy="35.0" r="1.6" class="nail"/><circle cx="257.8" cy="35.0" r="1.6" class="nail"/></g><g class="fixture" style="--i:16"><rect x="152" y="306" width="58" height="104" rx="3" fill="#1F2D3A"/><circle cx="198" cy="358" r="3" fill="#D9A441"/></g><g class="fixture" style="--i:17"><rect x="260" y="282" width="76" height="62" rx="3" fill="#EEF0EC" stroke="#1F2D3A" stroke-width="6"/><line x1="298" y1="282" x2="298" y2="344" stroke="#1F2D3A" stroke-width="4"/><line x1="260" y1="313" x2="336" y2="313" stroke="#1F2D3A" stroke-width="4"/></g><path class="chalk" d="M20 416 L460 416" /></svg>
+    </div>
+  </section>
+
+  <section class="cycle" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="cycle-head">
+        <div class="section-head">
+          <h2 id="how-title">Leftover materials become repaired homes</h2>
+          <p class="lede">Construction sites throw away good lumber, doors and fixtures every day. We put them to work.</p>
+        </div>
+        <figure class="photo photo-plans"><picture><source type="image/avif" srcset="images/plans-450.avif 450w, images/plans-700.avif 700w, images/plans-900.avif 900w" sizes="(max-width:900px) 100vw, 352px"><source type="image/webp" srcset="images/plans-450.webp 450w, images/plans-700.webp 700w, images/plans-900.webp 900w" sizes="(max-width:900px) 100vw, 352px"><img src="images/plans-700.jpg" srcset="images/plans-450.jpg 450w, images/plans-700.jpg 700w, images/plans-900.jpg 900w" sizes="(max-width:900px) 100vw, 352px" alt="Three builders looking over plans laid out on a sheet of plywood" width="900" height="1125" loading="lazy" decoding="async"></picture></figure>
+      </div>
+      <ol class="cycle-steps">
+        <li>
+          <h3>Materials come in</h3>
+          <p>Contractors, builders and homeowners donate surplus lumber, fixtures and supplies instead of hauling them to the landfill.</p>
+        </li>
+        <li>
+          <h3>We sort and sell</h3>
+          <p>Usable materials go to our reclaimed materials yard, priced well below new, for anyone working on a project.</p>
+        </li>
+        <li>
+          <h3>Sales fund repairs</h3>
+          <p>All proceeds pay for repairs on the homes of families who couldn't otherwise afford them.</p>
+        </li>
+      </ol>
+      <p class="cycle-note">Some of those same materials end up in the homes we repair.</p>
+    </div>
+  </section>
+
+  <section class="repair" id="request" aria-labelledby="repair-title">
+    <div class="wrap">
+      <div>
+        <h2 id="repair-title">Home repair</h2>
+        <p class="lede" style="margin-top:1rem">We focus on repairs that keep a home safe, dry and livable, so the people in it can stay.</p>
+        <figure class="photo photo-repair"><picture><source type="image/avif" srcset="images/repair-600.avif 600w, images/repair-900.avif 900w, images/repair-1200.avif 1200w" sizes="(max-width:900px) 100vw, 560px"><source type="image/webp" srcset="images/repair-600.webp 600w, images/repair-900.webp 900w, images/repair-1200.webp 1200w" sizes="(max-width:900px) 100vw, 560px"><img src="images/repair-900.jpg" srcset="images/repair-600.jpg 600w, images/repair-900.jpg 900w, images/repair-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 560px" alt="A worker on a ladder repairing the siding of a two-story house" width="1200" height="800" loading="lazy" decoding="async"></picture></figure>
+        <ul class="fix-list">
+          <li>Roof and gutter repairs</li>
+          <li>Steps, railings and ramps</li>
+          <li>Floors and subfloors</li>
+          <li>Doors and windows</li>
+          <li>Decks and porches</li>
+          <li>Grab bars and safety fixes</li>
+        </ul>
+        <div class="who">
+          <h3>Who we help</h3>
+          <p>Homeowners anywhere in Northern Colorado who are facing a repair they can't manage on their own: seniors, people living with a disability, and low-income families. Not sure if you qualify? Ask us anyway.</p>
+        </div>
+      </div>
+
+      <div class="form-panel">
+        <h3>Request a repair</h3>
+        <p>Tell us a little about your home. We'll get back to you to talk it through.</p>
+        <form id="repair-form" data-subject="Repair request" novalidate>
+          <div class="row">
+            <div class="field"><label for="r-name">Your name</label><input id="r-name" name="Name" autocomplete="name" required></div>
+            <div class="field"><label for="r-phone">Phone</label><input id="r-phone" name="Phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field"><label for="r-email">Email <span class="hint">(optional)</span></label><input id="r-email" name="Email" type="email" autocomplete="email"></div>
+          <div class="field"><label for="r-city">City or town</label><input id="r-city" name="City" autocomplete="address-level2"></div>
+          <fieldset class="field">
+            <legend>Do you own the home?</legend>
+            <div class="radios">
+              <label><input type="radio" name="Owns home" value="Yes"> Yes</label>
+              <label><input type="radio" name="Owns home" value="No"> No</label>
+              <label><input type="radio" name="Owns home" value="Not sure"> Not sure</label>
+            </div>
+          </fieldset>
+          <div class="field"><label for="r-need">What needs fixing?</label><textarea id="r-need" name="What needs fixing" required></textarea></div>
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-pine" type="submit">Send repair request</button>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="materials" id="materials" aria-labelledby="materials-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="materials-title">Reclaimed materials</h2>
+        <p class="lede">Every board that comes through our yard either goes into a repair or is sold to fund one. Either way, it stays out of the landfill.</p>
+      </div>
+      <figure class="photo photo-lumber"><picture><source type="image/avif" srcset="images/lumber-700.avif 700w, images/lumber-1100.avif 1100w, images/lumber-1400.avif 1400w" sizes="(max-width:1200px) 100vw, 1160px"><source type="image/webp" srcset="images/lumber-700.webp 700w, images/lumber-1100.webp 1100w, images/lumber-1400.webp 1400w" sizes="(max-width:1200px) 100vw, 1160px"><img src="images/lumber-1100.jpg" srcset="images/lumber-700.jpg 700w, images/lumber-1100.jpg 1100w, images/lumber-1400.jpg 1400w" sizes="(max-width:1200px) 100vw, 1160px" alt="Stacks of sawn lumber drying in a yard" width="1400" height="933" loading="lazy" decoding="async"></picture></figure>
+      <div class="materials-grid">
+        <div class="yard">
+          <h3>Donate materials</h3>
+          <p>Leftovers from a job, a remodel or a garage cleanout are welcome. Contractors with job-site surplus can ask about pickup. We'll give you a receipt for your records.</p>
+          <p class="label">We take</p>
+          <ul class="tags">
+            <li>Lumber and plywood</li><li>Decking</li><li>Doors</li><li>Windows</li><li>Cabinets</li><li>Tile and flooring</li><li>Plumbing and light fixtures</li><li>Hardware and fasteners</li><li>Tools</li>
+          </ul>
+          <p class="label">We can't take</p>
+          <ul class="tags no">
+            <li>Paint and chemicals</li><li>Broken glass</li><li>Rotted or moldy wood</li><li>Anything with asbestos</li>
+          </ul>
+          <a class="btn" href="#contact">Arrange a donation</a>
+        </div>
+        <div class="yard">
+          <figure class="photo photo-saw"><picture><source type="image/avif" srcset="images/saw-500.avif 500w, images/saw-800.avif 800w, images/saw-1000.avif 1000w" sizes="(max-width:900px) 100vw, 560px"><source type="image/webp" srcset="images/saw-500.webp 500w, images/saw-800.webp 800w, images/saw-1000.webp 1000w" sizes="(max-width:900px) 100vw, 560px"><img src="images/saw-800.jpg" srcset="images/saw-500.jpg 500w, images/saw-800.jpg 800w, images/saw-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 560px" alt="A man cutting a board on a miter saw" width="1000" height="666" loading="lazy" decoding="async"></picture></figure>
+          <h3>Shop reclaimed</h3>
+          <p>Our materials yard is open to homeowners, DIYers and contractors. Inventory changes all the time, and prices are well below new.</p>
+          <p>Every purchase pays for home repairs right here in Northern Colorado.</p>
+          <p><strong>Yard hours:</strong> by appointment for now. Get in touch and we'll set up a time.</p>
+          <a class="btn btn-ghost" href="#contact">Ask about inventory</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="volunteer" aria-labelledby="volunteer-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="volunteer-title">Volunteer</h2>
+        <p class="lede" style="margin-top:1rem">Most of our work gets done by people who show up with a free Saturday and a willingness to learn.</p>
+        <ul class="ways">
+          <li><strong>On a repair crew</strong>No experience needed. We'll teach you and pair you with someone who knows the work.</li>
+          <li><strong>In the materials yard</strong>Sorting, de-nailing and organizing donated materials.</li>
+          <li><strong>Skilled trades</strong>Licensed electricians, plumbers and roofers can make the biggest difference of all.</li>
+          <li><strong>Groups</strong>Bring your company, church or team for a workday.</li>
+        </ul>
+        <a class="btn" href="#contact">Sign up to volunteer</a>
+      </div>
+      <div class="side">
+      <figure class="photo photo-volunteers"><picture><source type="image/avif" srcset="images/volunteers-450.avif 450w, images/volunteers-700.avif 700w, images/volunteers-900.avif 900w" sizes="(max-width:900px) 100vw, 440px"><source type="image/webp" srcset="images/volunteers-450.webp 450w, images/volunteers-700.webp 700w, images/volunteers-900.webp 900w" sizes="(max-width:900px) 100vw, 440px"><img src="images/volunteers-700.jpg" srcset="images/volunteers-450.jpg 450w, images/volunteers-700.jpg 700w, images/volunteers-900.jpg 900w" sizes="(max-width:900px) 100vw, 440px" alt="Two smiling volunteers in hard hats and safety glasses steadying a wooden wall" width="900" height="1199" loading="lazy" decoding="async"></picture></figure>
+      <aside class="give" aria-labelledby="give-title">
+        <h3 id="give-title">Give</h3>
+        <p>Every dollar goes to materials, tools and labor for the homes we repair.</p>
+        <p>Online giving is coming soon. Until then, the best way to help is to donate materials or volunteer your time.</p>
+        <p class="small">Generations Construction Corp is a 501(c)(3) public charity, EIN 43-2536814. Gifts are tax-deductible to the extent allowed by law.</p>
+      </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="contact-title">Get in touch</h2></div>
+      <div class="contact-grid">
+        <div><h3>Email</h3><p><a href="mailto:info@generationsconstruction.org">info@generationsconstruction.org</a></p></div>
+        <div><h3>Phone</h3><p>Coming soon</p></div>
+        <div><h3>Where we work</h3><p>All of Northern Colorado, including Fort Collins, Loveland, Greeley, Longmont, Windsor and the communities in between. Based in Loveland.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <p><strong>Generations Construction Corp</strong></p>
+      <p>A 501(c)(3) nonprofit based in Loveland and serving all of Northern Colorado.</p>
+    </div>
+    <p>&copy; 2026</p>
+  </div>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
